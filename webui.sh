@@ -55,8 +55,8 @@ PY
 }
 
 # 用 Python 做端口探测，避免依赖 lsof/nc 在不同 macOS/Linux 发行版上的差异。
-# shellcheck disable=SC2086
-SELECTED_WEBUI_PORT=$(find_available_port $PORT_CHECK_CMD)
+# PATCHED: quote PORT_CHECK_CMD to handle paths with spaces
+SELECTED_WEBUI_PORT=$(find_available_port "$PORT_CHECK_CMD")
 
 if [ -z "$SELECTED_WEBUI_PORT" ]; then
   echo "***** No available WebUI port found in 8501-8599 for $MPT_WEBUI_HOST. *****"

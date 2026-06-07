@@ -8,15 +8,15 @@ Podejście: minimalnie inwazyjna warstwa SaaS na gotowym silniku. Silnik żyje s
 
 ---
 
-## Stage 1 — PoC lokalny (aktualny)
+## Stage 1 — PoC lokalny ✓ ZAKOŃCZONY (2026-06-07)
 
-**Cel:** uruchomić aplikację lokalnie, przetestować możliwości silnika, poznać API i WebUI.
+**Wynik:** WebUI działa na localhost:8501. Pierwsze wideo wygenerowane (~148s, 52 klipy Pexels, TTS edge_tts, LLM GPT-4o-mini). Jakość do dostrojenia (prompty, głos, dobór klipów).
 
-- [x] Sklonować repo z upstream
-- [ ] Uruchomić lokalnie (Python/uv + config)
-- [ ] Skonfigurować klucze API (LLM, TTS, wideo)
-- [ ] Wygenerować pierwsze testowe wideo
-- [ ] Zmapować punkty rozszerzeń pod SaaS
+- [x] Sklonować repo z upstream (remote: `upstream` → harry0703, `origin` → websystemspl)
+- [x] Uruchomić lokalnie — `PATH="$HOME/.local/bin:$PATH" ./webui.sh`
+- [x] Skonfigurować klucze API (OpenAI + Pexels)
+- [x] Wygenerować pierwsze testowe wideo
+- [ ] Zmapować punkty rozszerzeń pod SaaS (następna sesja)
 
 ---
 
